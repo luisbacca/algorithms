@@ -1,3 +1,10 @@
+package com.company;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class LongestSubstringWithoutRepeatingCharacters {
+
     public int lengthOfLongestSubstring(String s){
         int left = 0;
         int right = 0;
@@ -13,3 +20,13 @@
         }
         return longSoFar;
     }
+
+    public static void main(String[] args) {
+        LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters
+                = new LongestSubstringWithoutRepeatingCharacters();
+        System.out.println(
+                longestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("pwwkew")
+        );
+    }
+
+}
